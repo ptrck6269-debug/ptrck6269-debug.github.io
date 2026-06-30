@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Plotly Demo</title>
+     <style>
+      body{
+        background-color: #e6e6fa;
+      }
+    </style>
+     <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <center>
+    <h1>My first PLotly plot!</h1>
+      <div id:"plot"></div>
+      <p><a href="index.html">return to home page</a></p>
+      <hr>
+      <p>&copy; STEM PREP 2026</p>
+    </center>
+    <script>
+      var trace = {
+        x: [1, 2, 3, 4, 5],
+        y: [4, 1, 47, 48, 100],
+        mode: 'lines'
+      };
+
+      var data = [trace];
+      var layout = {title: "My first plot"};
+
+      PLotly.newPlot('plot', data, layout);
+      
+    </script>
+  </body>
+</html>
