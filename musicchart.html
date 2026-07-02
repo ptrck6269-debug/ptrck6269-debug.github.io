@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Music Chart</title>
+     <style>
+      body{
+        background-color: #e6e6fa;
+      }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <center>
+    <h1>My favorite Ye Songs</h1>
+      <div id="plot"></div>
+      <p><a href="index.html">return to home page</a></p>
+      <hr>
+      <p>&copy; STEM PREP 2026</p>
+    </center>
+    <script>
+      var songs = ["After You", "Brothers", "Through The Wire"];
+      var views = ["2736124", "3761182", "83332068"];
+      var trace = {
+        x: songs, 
+        y: views,
+        type: "bar"
+      };
+      var data = [trace];
+      var layout = {title: "My Favorite Ye Songs"};
+      Plotly.newPlot("plot", data, layout);
+    </script>
+  </body>
+</html>
