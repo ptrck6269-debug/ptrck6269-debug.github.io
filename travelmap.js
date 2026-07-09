@@ -1,5 +1,5 @@
-// The approximate center coordinates for Isle of Palms, South Carolina are 32.819412° N, -79.734383° W
-var coordinates = [32.819412, -79.734383];
+// The approximate center coordinates for Isle of Palms, South Carolina are 32.800278° N, -79.795556°
+var coordinates = [32.800278, -79.795556];
 var map = L.map('map').setView(coordinates, 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
