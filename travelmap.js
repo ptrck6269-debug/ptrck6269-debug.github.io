@@ -7,9 +7,9 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 L.circle(coordinates, {
     "title": "Hello from Isle of Palms!",
-    color: "black",
+    color: "white",
     fillColor: "#EA4335",
-    radius: 90
+    radius: 1000
 })
     .bindPopup("<p>Hello from Isle of Palms</p>"
 ).addTo(map);
