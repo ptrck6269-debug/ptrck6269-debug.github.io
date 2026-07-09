@@ -5,6 +5,11 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-L.marker(coordinates, {"title": "Hello from Isle of Palms!"}).bindPopup(
-    "<p>Hello from Isle of Palms</p>"
+L.circle(coordinates, {
+    "title": "Hello from Isle of Palms!",
+    color: "black",
+    fillColor: "#EA4335",
+    radius: 90
+})
+    .bindPopup("<p>Hello from Isle of Palms</p>"
 ).addTo(map);
