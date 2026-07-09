@@ -9,7 +9,7 @@ L.circle(coordinates, {
     "title": "Hello from Isle of Palms!",
     color: "white",
     fillColor: "#EA4335",
-    radius: 10000
+    radius: 8000
 })
     .bindPopup("<p>Hello from Isle of Palms</p>"
 ).addTo(map);
