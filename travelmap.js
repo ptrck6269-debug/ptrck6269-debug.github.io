@@ -22,7 +22,8 @@ L.circle(coordinates, {
     "title": "Hello from Isle of Palms!",
     color: "white",
     fillColor: "#EA4335",
-    radius: 8000
+    fillOpacity: 1,
+    radius: 90
 })
     .bindPopup(popupcode).addTo(map);
 var fpmarker = L.marker(fp, {title: "Fishing Pier"}).bindPopup(markercode).addTo(map);
